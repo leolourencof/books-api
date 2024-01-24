@@ -16,7 +16,7 @@ Utilize o comando:
 
 ### GET ALL
 
-`GET | http://127.0.0.1:8000/api/read.php`
+`GET | http://localhost:8000/api/read.php`
 
 RESPONSE 200
 
@@ -41,7 +41,7 @@ RESPONSE 200
 
 ### CREATE
 
-`POST | http://127.0.0.1:8000/api/create.php`
+`POST | http://localhost:8000/api/create.php`
 
 <details open>
  <summary>REQUEST BODY</summary>
@@ -70,7 +70,7 @@ RESPONSE 201
 
 ### GET UNIQUE
 
-`GET | http://127.0.0.1:8000/api/read_one.php?id={book_id}`
+`GET | http://localhost:8000/api/read_one.php?id={book_id}`
 
 RESPONSE 200
 
@@ -87,7 +87,7 @@ RESPONSE 200
 
 ### PATCH
 
-`PATCH | http://127.0.0.1:8000/api/update.php?id={book_id}`
+`PATCH | http://localhost:8000/api/update.php?id={book_id}`
 
 <details open>
  <summary>REQUEST BODY</summary>
@@ -117,6 +117,6 @@ RESPONSE 200
 
 ### DELETE
 
-`DELETE | http://127.0.0.1:8000/api/delete.php?id={book_id}`
+`DELETE | http://localhost:8000/api/delete.php?id={book_id}`
 
 RESPONSE 204
