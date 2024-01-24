@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/app/src
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgresql
+
+  postgresql:
+    container_name: database
+    image: postgres:16.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1234"
+    volumes:
+      - ./src/database/books.sql:/docker-entrypoint-initdb.d/books.sql
+    ports:
+      - "5433:5432"
