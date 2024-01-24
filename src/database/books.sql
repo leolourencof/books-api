@@ -1,6 +1,6 @@
 CREATE DATABASE mydb WITH OWNER = postgres;
 
-\c mydb
+\c mydb;
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
